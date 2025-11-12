@@ -1,10 +1,9 @@
-*.zip
-*.tar.gz
-*.rar
-*.exe
-node_modules/
+build/
+dist/
+*.log
 __pycache__/
+*.py[cod]
+venv/
 .env
 .env.local
-dump.rdb
-*.pyc
+node_modules/
