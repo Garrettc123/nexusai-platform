@@ -109,3 +109,32 @@ MIT License - see [LICENSE](LICENSE) for details
 *Last Updated: November 12, 2025*
 
 </div>
+
+## 🎯 Get Started Today
+
+### For Users
+- **[View Pricing](docs/PRICING.md)** - Find the right plan
+- **[Apply for Early Access](docs/EARLY_ACCESS.md)** - Join beta (48 spots left)
+- **[See Use Cases](docs/USE_CASES.md)** - Real-world applications
+
+### For Developers
+- **[Quick Start](docs/QUICKSTART.md)** - Get running in 5 minutes
+- **[Architecture](docs/ARCHITECTURE.md)** - System design
+- **[API Docs](docs/API.md)** - Integration guide
+
+### For Investors
+- **[Metrics Dashboard](docs/METRICS.md)** - Current traction
+- **[Commercial Licensing](docs/PRICING.md)** - Revenue model
+- **Contact:** gwc2780@gmail.com
+
+---
+
+## 🔥 Limited Time Offer
+
+**First 50 users get:**
+- 3 months Pro tier FREE ($147 value)
+- Lifetime 50% discount
+- Direct founder access
+
+**[Apply Now →](docs/EARLY_ACCESS.md)** | Spots Remaining: **48**
+
