@@ -1,0 +1,10 @@
+*.zip
+*.tar.gz
+*.rar
+*.exe
+node_modules/
+__pycache__/
+.env
+.env.local
+dump.rdb
+*.pyc
