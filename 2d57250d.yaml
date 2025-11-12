@@ -1,0 +1,410 @@
+trigger_categories:
+- name: Time-Based
+  icon: ⏰
+  triggers:
+  - id: time_daily
+    name: Daily at Specific Time
+    description: Execute every day at a set time
+  - id: time_weekly
+    name: Weekly Schedule
+    description: Execute on specific days of the week
+  - id: time_interval
+    name: Repeat Every X Minutes
+    description: Execute at regular intervals
+  - id: time_cron
+    name: Custom Cron Schedule
+    description: Advanced scheduling with cron expressions
+- name: Device Events
+  icon: 📱
+  triggers:
+  - id: device_battery
+    name: Battery Level
+    description: When battery reaches a certain level
+  - id: device_charging
+    name: Charging State
+    description: When device starts/stops charging
+  - id: device_screen
+    name: Screen On/Off
+    description: When screen turns on or off
+  - id: device_boot
+    name: Device Boot
+    description: When device starts up
+- name: Location
+  icon: 📍
+  triggers:
+  - id: location_enter
+    name: Enter Location
+    description: When entering a defined area
+  - id: location_exit
+    name: Exit Location
+    description: When leaving a defined area
+  - id: location_distance
+    name: Distance from Point
+    description: When within/outside radius of location
+- name: App Events
+  icon: 💻
+  triggers:
+  - id: app_open
+    name: App Opened
+    description: When specific app is opened
+  - id: app_close
+    name: App Closed
+    description: When specific app is closed
+  - id: app_notification
+    name: Notification Received
+    description: When notification from app arrives
+- name: Communication
+  icon: 📞
+  triggers:
+  - id: comm_sms_received
+    name: SMS Received
+    description: When text message arrives
+  - id: comm_call_incoming
+    name: Incoming Call
+    description: When receiving a call
+  - id: comm_call_missed
+    name: Missed Call
+    description: When a call is missed
+  - id: comm_email
+    name: Email Received
+    description: When new email arrives
+- name: Network
+  icon: 📶
+  triggers:
+  - id: network_wifi_connect
+    name: WiFi Connected
+    description: When connected to WiFi
+  - id: network_wifi_disconnect
+    name: WiFi Disconnected
+    description: When WiFi disconnects
+  - id: network_mobile_data
+    name: Mobile Data State
+    description: When mobile data changes state
+- name: Sensors
+  icon: 🔬
+  triggers:
+  - id: sensor_shake
+    name: Device Shaken
+    description: When device is shaken
+  - id: sensor_proximity
+    name: Proximity Sensor
+    description: When object near proximity sensor
+  - id: sensor_light
+    name: Light Level
+    description: When ambient light changes
+action_categories:
+- name: Device Control
+  icon: 🎛️
+  actions:
+  - id: device_volume
+    name: Set Volume
+    description: Change device volume
+  - id: device_brightness
+    name: Set Brightness
+    description: Adjust screen brightness
+  - id: device_wifi
+    name: Toggle WiFi
+    description: Turn WiFi on/off
+  - id: device_bluetooth
+    name: Toggle Bluetooth
+    description: Turn Bluetooth on/off
+  - id: device_airplane
+    name: Airplane Mode
+    description: Toggle airplane mode
+  - id: device_dnd
+    name: Do Not Disturb
+    description: Enable/disable DND mode
+- name: Notifications
+  icon: 🔔
+  actions:
+  - id: notify_custom
+    name: Show Notification
+    description: Display custom notification
+  - id: notify_sound
+    name: Play Sound
+    description: Play notification sound
+  - id: notify_vibrate
+    name: Vibrate
+    description: Vibrate device
+  - id: notify_led
+    name: LED Flash
+    description: Flash notification LED
+- name: Communication
+  icon: 💬
+  actions:
+  - id: comm_send_sms
+    name: Send SMS
+    description: Send text message
+  - id: comm_send_email
+    name: Send Email
+    description: Send email message
+  - id: comm_auto_reply
+    name: Auto Reply
+    description: Send automatic reply
+  - id: comm_call
+    name: Make Call
+    description: Initiate phone call
+- name: Apps & Automation
+  icon: ⚙️
+  actions:
+  - id: app_launch
+    name: Launch App
+    description: Open specific application
+  - id: app_close
+    name: Close App
+    description: Close running application
+  - id: automation_run
+    name: Run Another Automation
+    description: Trigger another automation
+  - id: automation_disable
+    name: Disable Automation
+    description: Turn off an automation
+- name: Data & Files
+  icon: 📁
+  actions:
+  - id: data_backup
+    name: Backup Data
+    description: Backup files to cloud
+  - id: data_log
+    name: Log Data
+    description: Write to log file
+  - id: data_screenshot
+    name: Take Screenshot
+    description: Capture screen
+  - id: data_photo
+    name: Take Photo
+    description: Capture photo with camera
+- name: Media
+  icon: 🎵
+  actions:
+  - id: media_play_music
+    name: Play Music
+    description: Start music playback
+  - id: media_pause
+    name: Pause Media
+    description: Pause current media
+  - id: media_next
+    name: Next Track
+    description: Skip to next track
+  - id: media_volume
+    name: Set Media Volume
+    description: Adjust media volume
+- name: Smart Home
+  icon: 🏠
+  actions:
+  - id: smart_lights
+    name: Control Lights
+    description: Turn lights on/off/dim
+  - id: smart_thermostat
+    name: Set Temperature
+    description: Adjust thermostat
+  - id: smart_lock
+    name: Smart Lock
+    description: Lock/unlock doors
+  - id: smart_scene
+    name: Activate Scene
+    description: Trigger smart home scene
+- name: Web & Cloud
+  icon: ☁️
+  actions:
+  - id: web_webhook
+    name: Send Webhook
+    description: HTTP POST to URL
+  - id: web_api_call
+    name: API Request
+    description: Make custom API call
+  - id: web_scrape
+    name: Scrape Web Page
+    description: Extract data from webpage
+  - id: web_ifttt
+    name: Trigger IFTTT
+    description: Activate IFTTT applet
+- name: Productivity
+  icon: 📊
+  actions:
+  - id: prod_calendar
+    name: Add Calendar Event
+    description: Create calendar entry
+  - id: prod_task
+    name: Create Task
+    description: Add task to task manager
+  - id: prod_note
+    name: Create Note
+    description: Save note to note app
+  - id: prod_reminder
+    name: Set Reminder
+    description: Create reminder
+- name: Advanced
+  icon: 🚀
+  actions:
+  - id: adv_wait
+    name: Wait/Delay
+    description: Pause execution for time period
+  - id: adv_variable
+    name: Set Variable
+    description: Store data in variable
+  - id: adv_conditional
+    name: If/Then Logic
+    description: Conditional branching
+  - id: adv_loop
+    name: Loop Actions
+    description: Repeat actions multiple times
+condition_types:
+- name: Time Conditions
+  icon: ⏰
+  conditions:
+  - id: cond_time_range
+    name: Time Between
+    description: Only run during time range
+  - id: cond_day_of_week
+    name: Days of Week
+    description: Only run on specific days
+  - id: cond_date_range
+    name: Date Range
+    description: Only run between dates
+- name: Device Conditions
+  icon: 📱
+  conditions:
+  - id: cond_battery_level
+    name: Battery Level
+    description: Check battery percentage
+  - id: cond_charging_state
+    name: Charging State
+    description: Check if charging
+  - id: cond_screen_state
+    name: Screen State
+    description: Check if screen on/off
+- name: Location Conditions
+  icon: 📍
+  conditions:
+  - id: cond_at_location
+    name: At Location
+    description: Check current location
+  - id: cond_near_location
+    name: Near Location
+    description: Check proximity to place
+- name: Network Conditions
+  icon: 📶
+  conditions:
+  - id: cond_wifi_connected
+    name: WiFi Connected
+    description: Check WiFi connection
+  - id: cond_wifi_ssid
+    name: Specific WiFi
+    description: Check WiFi network name
+  - id: cond_mobile_data
+    name: Mobile Data Active
+    description: Check mobile data state
+- name: App Conditions
+  icon: 💻
+  conditions:
+  - id: cond_app_running
+    name: App Running
+    description: Check if app is active
+  - id: cond_app_foreground
+    name: App in Foreground
+    description: Check if app is in front
+example_automations:
+- id: auto_1
+  name: Morning Routine
+  description: Automate your morning routine with WiFi, volume, and app launches
+  icon: 🌅
+  trigger: Daily at 7:00 AM
+  actions:
+  - Enable WiFi
+  - Set volume to 50%
+  - Launch News App
+  - Show Good Morning notification
+  popularity: 95
+- id: auto_2
+  name: Driving Mode
+  description: Auto-reply to texts and enable hands-free mode while driving
+  icon: 🚗
+  trigger: Connected to car Bluetooth
+  actions:
+  - Enable DND
+  - Launch music app
+  - Auto-reply to SMS
+  - Increase brightness
+  popularity: 88
+- id: auto_3
+  name: Battery Saver
+  description: Automatically conserve battery when running low
+  icon: 🔋
+  trigger: Battery below 20%
+  actions:
+  - Disable WiFi
+  - Disable Bluetooth
+  - Reduce brightness
+  - Enable battery saver
+  popularity: 92
+- id: auto_4
+  name: Sleep Mode
+  description: Prepare your device for nighttime
+  icon: 😴
+  trigger: Daily at 10:00 PM
+  actions:
+  - Enable DND
+  - Set volume to vibrate
+  - Dim screen
+  - Close all apps
+  popularity: 85
+- id: auto_5
+  name: Work Focus
+  description: Enter work mode when arriving at office
+  icon: 💼
+  trigger: Enter work location
+  actions:
+  - Connect to office WiFi
+  - Enable DND
+  - Launch productivity apps
+  - Set professional ringtone
+  popularity: 78
+- id: auto_6
+  name: Smart Home Arrival
+  description: Automate home devices when you arrive
+  icon: 🏡
+  trigger: Enter home location
+  actions:
+  - Turn on lights
+  - Set thermostat to 72°F
+  - Play favorite playlist
+  - Unlock smart lock
+  popularity: 82
+integration_partners:
+- name: IFTTT
+  icon: 🔗
+  category: Web Services
+- name: Zapier
+  icon: ⚡
+  category: Web Services
+- name: Google Home
+  icon: 🏠
+  category: Smart Home
+- name: Alexa
+  icon: 🗣️
+  category: Voice Assistant
+- name: Spotify
+  icon: 🎵
+  category: Music
+- name: Gmail
+  icon: 📧
+  category: Email
+- name: Slack
+  icon: 💬
+  category: Communication
+- name: Dropbox
+  icon: 📦
+  category: Cloud Storage
+- name: Todoist
+  icon: ✓
+  category: Productivity
+- name: Philips Hue
+  icon: 💡
+  category: Smart Home
+- name: Nest
+  icon: 🌡️
+  category: Smart Home
+- name: Twitter
+  icon: 🐦
+  category: Social Media
