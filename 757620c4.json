@@ -1,0 +1,31 @@
+{
+  "deployment": "Railway.app",
+  "time": "5 minutes",
+  "files_needed": [
+    "railway_app.py",
+    "Dockerfile"
+  ],
+  "steps": {
+    "1": "Upload railway_app.py and Dockerfile to GitHub (nexusai-platform repo)",
+    "2": "Go to railway.app on phone",
+    "3": "Login with GitHub",
+    "4": "New Project \u2192 Deploy from GitHub",
+    "5": "Select nexusai-platform",
+    "6": "Wait 2-3 minutes",
+    "7": "Click Settings \u2192 Generate Domain",
+    "8": "Get your live URL: yourapp.up.railway.app"
+  },
+  "what_you_get": {
+    "live_url": "Professional landing page",
+    "api_endpoint": "/api/stats for data",
+    "health_check": "/health for monitoring",
+    "demo_ready": "Share with customers and investors"
+  },
+  "after_deployment": [
+    "Share URL on LinkedIn",
+    "Post in startup communities",
+    "DM 10 potential customers",
+    "Show investors the live system",
+    "Start getting customers this week"
+  ]
+}
