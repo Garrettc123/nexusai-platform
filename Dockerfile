@@ -22,6 +22,7 @@ RUN mkdir -p data logs config
 RUN useradd -m -u 1000 nexusai && chown -R nexusai:nexusai /app
 USER nexusai
 
-EXPOSE 8000
+EXPOSE $PORT
 
-CMD ["python", "main.py"]
+# Use Gunicorn production server instead of Flask dev server
+CMD gunicorn --bind 0.0.0.0:${PORT:-8000} --workers 4 --worker-class sync --timeout 120 --access-logfile - --error-logfile - main:app
